@@ -2,6 +2,8 @@
   "name": "rest-rant",
   "version": "1.0.0",
   "description": "",
+  "nodemonConfig": {
+    "ext": "js,html,json,jsx,mjs"},
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
