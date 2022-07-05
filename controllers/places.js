@@ -6,7 +6,7 @@ router.get('/', (req, res) => {
     city: 'Santa Fe',
     state: 'NM',
     cuisines: 'Finger Food, Bakery',
-    pic: '/images/plant_lounge.png'
+    pic: '/images/plant_lounge.jpg'
   }, {
       name: 'Cozy Cat Cafe',
       city: 'Phoenix',
