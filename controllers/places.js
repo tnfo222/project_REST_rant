@@ -5,6 +5,7 @@ router.get('/', (req, res) => {
   res.render('places/index', {places})
 })
 
+//Default values when submitted if not required
 router.post('/', (req, res) => {
   console.log(req.body)
   if (!req.body.pic) {
