@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "nodemonConfig": {
-    "ext": "js,html,json,jsx,mjs"},
+    "ext": "js,html,json,jsx,mjs"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,6 +16,6 @@
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "express-react-views": "^0.11.0",
-    "react": "^18.2.0"
+    "react": "^16.14.0"
   }
 }
