@@ -6,14 +6,50 @@ h1 {
   html, body {
     height: 100%;
   }
+
   body {
     display: flex;
     flex-direction: column;
+    background-color: lightblue;
+    text-align: center;
   }
+
+  main {
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: white;
+  }
+
   .content {
     flex: 1 0 auto;
   }
+
   .footer {
     flex-shrink: 0;
     background-color: bisque;
   }
+
+  nav {
+    background-color: cornflowerblue;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 25px;
+}
+
+nav a {
+    color: white;
+    font-size: 1.5em;
+}
+
+nav a:hover {
+    color: pink;
+    text-decoration: none;
+}
