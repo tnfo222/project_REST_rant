@@ -1,6 +1,6 @@
 //Dependencies
 const router = require('express').Router()
-const places = require('../models/places.js')
+const places = require('../models/')
 
 // GET /places
 router.get('/', (req, res) => { 
@@ -42,19 +42,6 @@ router.get('/:id', (req, res) => {
   }
 })
 
-router.get('/:id/edit', (req, res) => {
-  let id = Number(req.params.id)
-  if (isNaN(id)){
-    res.render('error404')
-  }
-  else if (!places[id]) {
-    res.render('error404')
-  }
-  else {
-    res.render('places/edit', { place: places[id] })
-  }
-})
-
 router.delete('/places/:id', (req, res) => {
   let id = Number(req.params.id)
   if (isNaN(id)) {
@@ -65,7 +52,20 @@ router.delete('/places/:id', (req, res) => {
   }
   else {
     places.splice(id, 1)
-    res.redirect('/places')
+    res.send('STUB DELETE places/:id')
+  }
+})
+
+router.get('/:id/edit', (req, res) => {
+  let id = Number(req.params.id)
+  if (isNaN(id)){
+    res.render('error404')
+  }
+  else if (!places[id]) {
+    res.render('error404')
+  }
+  else {
+    res.render('places/edit', { place: places[id] })
   }
 })
 

@@ -3,6 +3,9 @@ h1 {
     color: cornflowerblue;
   }
   
+h2{
+  color:lightblue;
+}
   html, body {
     height: 100%;
   }
@@ -17,6 +20,7 @@ h1 {
   main {
     margin-right: 20px;
     margin-left: 20px;
+    padding: 20px;
     background-color: white;
   }
 
@@ -52,4 +56,16 @@ nav a {
 nav a:hover {
     color: pink;
     text-decoration: none;
+}
+
+form{
+  display:inline;
+}
+
+.inactive {
+  color:gray;
+}
+
+.border {
+  border:1px solid gray;
 }
