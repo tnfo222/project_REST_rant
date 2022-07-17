@@ -1,9 +1,12 @@
 //Modules and Globals
 require('dotenv').config()
 const express = require('express')
+const methodOverride = require('method-override')
 const app = express()
 //Decrypt data
 app.use(express.urlencoded({ extended: true }))
+//Add PUT and DELETE methods
+app.use(methodOverride('_method'))
 
 //Express Settings
 app.set('view engine', 'jsx')
