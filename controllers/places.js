@@ -4,7 +4,7 @@ const places = require('../models/places.js')
 
 // GET /places
 router.get('/', (req, res) => { 
-  res.render('/places/index', {places})
+  res.render('places/index', {places})
 })
 
 //Default values when submitted if not required
@@ -25,7 +25,7 @@ router.post('/', (req, res) => {
 
 //Create
 router.get('/new', (req, res) => {
-  res.render('/places/new')
+  res.render('places/new')
 })
 
 //Show Route
