@@ -12,20 +12,18 @@ function new_form () {
                             <label htmlFor="name">Place Name</label>
                             <input className="form-control" id="name" name="name" required/>
                         </div>
-                        <br></br>
-                        <div className="form-group">
+                        <div className="form-group col-sm-6">
                             <label htmlFor="pic">Place Picture</label>
-                            <input type="url" id="pic" name="pic" />
+                            <input className="form-control" type="url" id="pic" name="pic" />
                         </div>
                     </div>
-                    <br></br>
                     <div className="row">
-                        <div className="form-group">
+                        <div className="form-group col-sm-6">
                             <label htmlFor="city">City</label>
                             <input className="form-control" id="city" name="city" />
                         </div>
                         <br></br>
-                        <div className="form-group">
+                        <div className="form-group col-sm-6">
                             <label htmlFor="state">State</label>
                             <input className="form-control" id="state" name="state" list="state-list"/>
                             <datalist id="state-list"> 

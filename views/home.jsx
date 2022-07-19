@@ -7,7 +7,7 @@ function home () {
     return (
         <Def>
             <main>
-                <h1>HOME</h1>
+                <h1>REST-Rant</h1>
                 <div>
                     <img src="/images/bread_plates.jpg" alt="different breads with fruit toppings" width={640} height={480}></img>
                 </div>

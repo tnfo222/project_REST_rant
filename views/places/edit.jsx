@@ -85,7 +85,7 @@ function edit_form (data) {
                         <input className="form-control" id="cuisines" name="cuisines" required/>
                     </div>
                     <br></br>
-                    <input className = "btn btn-primary" type="submit" value="Add Place" />
+                    <input className = "btn btn-primary" type="submit" value="Edit Place" />
                 </form>
             </main>
         </Def>

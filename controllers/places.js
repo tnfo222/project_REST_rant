@@ -4,7 +4,7 @@ const places = require('../models/places.js')
 
 // GET /places
 router.get('/', (req, res) => { 
-  res.render('places/index', {places})
+  res.render('/places/index', {places})
 })
 
 //Default values when submitted if not required
@@ -25,11 +25,11 @@ router.post('/', (req, res) => {
 
 //Create
 router.get('/new', (req, res) => {
-  res.render('places/new')
+  res.render('/places/new')
 })
 
 //Show Route
-router.get('/:id', (req, res) => {
+router.get('/places/:id', (req, res) => {
   let id = Number(req.params.id)
   if (isNaN(id)) {
     res.render('error404')
@@ -38,7 +38,7 @@ router.get('/:id', (req, res) => {
     res.render('error404')
   }
   else {
-    res.render('places/show', { place: places[id], id})
+    res.render('/places/show', { place: places[id], id})
   }
 })
 
