@@ -19,11 +19,11 @@ function edit_form (data) {
                     </div>
                     <br></br>
                     <div className="row">
-                        <div className = "form-group col-sm-4">
+                        <div className = "form-group col-sm-6">
                             <label htmlFor="city">City</label>
                             <input className="form-control" id="city" name="city" />
                         </div>
-                        <div className="form-group col-sm-4">
+                        <div className="form-group col-sm-6">
                             <label htmlFor="state">State</label>
                             <input className="form-control" id="state" name="state" list="state-list"/>
                             <datalist id="state-list"> 

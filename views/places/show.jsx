@@ -18,6 +18,8 @@ function show (data) {
             </form>
             <h2>Comments</h2> 
             <p>No comments yet!</p>
+            <h2>Cuisines</h2>
+            <p>{data.cuisines}</p>
           </main>
         </Def>
     )
