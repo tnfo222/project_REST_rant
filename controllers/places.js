@@ -1,7 +1,6 @@
 //Dependencies
 const router = require('express').Router()
 const db = require('../models')
-const places = require('../models/places.js')
 
 // GET /places
 router.get('/', (req, res) => { 
