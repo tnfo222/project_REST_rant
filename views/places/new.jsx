@@ -23,7 +23,7 @@ function new_form (data) {
                         </div>
                         <div className="form-group col-sm-6">
                             <label htmlFor="pic">Place Picture</label>
-                            <input className="form-control" type="url" id="pic" name="pic" />
+                            <input className="form-control" id="pic" name="pic" />
                         </div>
                     </div>
                     <div className="row">
@@ -89,18 +89,20 @@ function new_form (data) {
                         </div>
                     </div>
                     <br />
-                    <div className="form-group">
-                        <label htmlFor="cuisines">Cuisines</label>
-                        <input className="form-control" id="cuisines" name="cuisines" required/>
-                    </div>
-                    <div className="form-group col-sm-4">
-                        <label htmlFor="founded">Founded Year</label>
-                        <input 
-                            type="number"
-                            className="form-control" 
-                            id="founded" 
-                            name="founded"
-                            value={new Date().getFullYear()} />
+                    <div className="row">
+                        <div className="form-group col-sm-6">
+                            <label htmlFor="cuisines">Cuisines</label>
+                            <input className="form-control" id="cuisines" name="cuisines" required/>
+                        </div>
+                        <div className="form-group col-sm-6">
+                            <label htmlFor="founded">Founded Year</label>
+                            <input 
+                                type="number"
+                                className="form-control" 
+                                id="founded" 
+                                name="founded"
+                                value={new Date().getFullYear()} />
+                        </div>
                     </div>
                     <br />
                     <input className = "btn btn-primary" type="submit" value="Add Place" />

@@ -16,6 +16,9 @@ router.get('/', (req, res) => {
 
 //Default values when submitted if not required
 router.post('/', (req, res) => {
+  if (req.body.pic === '') { req.body.pic = undefined }
+  if (req.body.city === '') { req.body.city = undefined }
+  if (req.body.state === '') { req.body.state = undefined }
   db.Place.create(req.body)
   .then(() => {
     res.redirect('/places')
