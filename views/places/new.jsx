@@ -23,7 +23,7 @@ function new_form (data) {
                         </div>
                         <div className="form-group col-sm-6">
                             <label htmlFor="pic">Place Picture</label>
-                            <input className="form-control" id="pic" name="pic" />
+                            <input className="form-control" type="string" id="pic" name="pic" />
                         </div>
                     </div>
                     <div className="row">
